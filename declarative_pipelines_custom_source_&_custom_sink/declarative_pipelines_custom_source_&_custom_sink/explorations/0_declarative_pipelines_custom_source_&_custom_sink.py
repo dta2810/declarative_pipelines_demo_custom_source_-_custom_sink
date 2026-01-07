@@ -30,7 +30,7 @@
 
 # MAGIC %md
 # MAGIC ## Prerequisites
-# MAGIC - Databricks workspace with support for declarative pipelines / DLT-style notebook definitions.
+# MAGIC - Databricks workspace with support for declarative pipelines / Declarative Pipelines-style notebook definitions.
 # MAGIC
 # MAGIC - Network access to:
 # MAGIC   - https://opensky-network.org/api/states/all

@@ -15,7 +15,7 @@
 # MAGIC
 # MAGIC The flow reads from the opensky_flights streaming table and sends batched JSON payloads to an HTTP endpoint [(RequestBin/Pipedream](https://pipedream.com/requestbin)) for inspection.
 # MAGIC
-# MAGIC Reference architecture and concepts are based on the Databricks blog: [“Introducing the DLT Sink API: Write Pipelines to Kafka and External Delta Tables”](https://www.databricks.com/blog/introducing-dlt-sink-api-write-pipelines-kafka-and-external-delta-tables#section-8).
+# MAGIC Reference architecture and concepts are based on the Databricks blog: [“Introducing the Declarative Pipelines Sink API: Write Pipelines to Kafka and External Delta Tables”](https://www.databricks.com/blog/introducing-dlt-sink-api-write-pipelines-kafka-and-external-delta-tables#section-8).
 
 # COMMAND ----------
 
@@ -41,7 +41,7 @@
 
 # MAGIC %md
 # MAGIC ## How to run
-# MAGIC - Attach the notebook to a cluster or pipeline environment that can run DLT flows from notebooks.
+# MAGIC - Attach the notebook to a cluster or pipeline environment that can run Declarative Pipelines flows from notebooks.
 # MAGIC
 # MAGIC - Ensure opensky_flights is available and actively updating (or replace with any streaming table using the same schema).
 # MAGIC  
