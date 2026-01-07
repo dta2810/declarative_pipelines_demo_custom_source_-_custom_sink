@@ -11,7 +11,7 @@
 
 # MAGIC %md
 # MAGIC ## Overview
-# MAGIC This notebook defines a custom streaming sink using the[ PySpark Data Source Writer API](https://docs.databricks.com/aws/en/pyspark/datasources) and connects it to a Lakeflow/Delta Live Tables append flow. 
+# MAGIC This notebook defines a custom streaming sink using the[ PySpark Data Source Writer API](https://docs.databricks.com/aws/en/pyspark/datasources) and connects it to a declarative pipelines append flow. 
 # MAGIC
 # MAGIC The flow reads from the opensky_flights streaming table and sends batched JSON payloads to an HTTP endpoint [(RequestBin/Pipedream](https://pipedream.com/requestbin)) for inspection.
 # MAGIC
@@ -41,7 +41,7 @@
 
 # MAGIC %md
 # MAGIC ## How to run
-# MAGIC - Attach the notebook to a cluster or pipeline environment that can run Declarative Pipelines flows from notebooks.
+# MAGIC - Attach the `2_requestbin_sink_in_ldp.py` notebook to a cluster or pipeline environment that can run Declarative Pipelines flows from notebooks.
 # MAGIC
 # MAGIC - Ensure opensky_flights is available and actively updating (or replace with any streaming table using the same schema).
 # MAGIC  
@@ -49,9 +49,9 @@
 
 # COMMAND ----------
 
-spark.sql("USE CATALOG `main_david_thomas`")
-spark.sql("USE SCHEMA `dp_demo_sch`")
+spark.sql("USE CATALOG `<your_catalog>`")
+spark.sql("USE SCHEMA `your_schema`")
 
 # COMMAND ----------
 
-display(spark.sql("SELECT * FROM samples.wanderbricks.users"))
+display(spark.sql("SELECT * FROM opensky_flights limit 100"))

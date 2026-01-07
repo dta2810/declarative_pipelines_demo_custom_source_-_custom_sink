@@ -38,6 +38,6 @@
 
 # MAGIC %md
 # MAGIC ## How to run
-# MAGIC - Attach this notebook to a cluster / pipeline environment that supports running declarative tables from notebook source.​
+# MAGIC - Attach the `1_opensky_source_in_ldp.py` notebook to a cluster / pipeline environment that supports running declarative tables from notebook source.​
 # MAGIC
 # MAGIC - Run the notebook (or configure it as the pipeline source), then start the pipeline so ingestion begins and the opensky_flights table updates continuously.
