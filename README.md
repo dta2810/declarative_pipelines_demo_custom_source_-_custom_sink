@@ -29,7 +29,7 @@ OpenSky API → Custom Source → Streaming Table → Append Flow → HTTP Sink 
 
 ## 📦 Prerequisites
 
-- ✅ Databricks workspace with DLT support
+- ✅ Databricks workspace with Declarative Pipelines support
 - ✅ Network access to:
   - [OpenSky Network API](https://opensky-network.org/api/states/all)
   - [RequestBin/Pipedream](https://pipedream.com/requestbin) endpoint
